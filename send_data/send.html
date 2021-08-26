@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+            <meta charset="utf-8">         
+            <title>Register</title>  
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">          
+            <link href="https://fonts.googleapis.com/css?family=Rationale&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">            
+            <link href="https://fonts.googleapis.com/css?family=Red+Rose&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Red+Hat Text&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+            <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>            
+            <script type="text/javascript" src="../send_data/bundle.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="styles.css">            
+            <style>              
+              body {background: #E5E5E5; }
+            </style>
+          
+    </head>          
+      <body>
+        <div class="fpn">
+          <img src="../images/image1.png" style="position:absolute; width:100px;height:122px ">
+        </div>
+        <div class="logo">
+          <img src="../images/image2.png" style="position:absolute; width:365px; height:92px"> 
+        </div>
+        <div class="swimmer">
+          <img src= "../images/image3.png" style="position:absolute; width: 159px; height:89px">
+        </div>
+        <div class="bitalino">
+          <img src="../images/image4.png" style="position: absolute; width:171px; height:61px">
+        </div>
+          <div class="back">
+            <a href="../first/index.html" class="letter">Back</a> 
+          </div>
+            
+          <div class="e115_282">Swim API</div>
+        <div class=e115_290>
+              
+          <div class="container">
+            <div class="e115_243">Send data to database</div>            
+              <div class="title">Metadata</div>
+              <form method="post">
+                <div class="user-details">
+                  <div class="input-box">
+                    <span class="details">User</span>
+                    <input type ="text" placeholder="Enter the owner of the data" required>                    
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Password</span>
+                    <input type ="text" placeholder="Enter your password" required>                    
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Pool size</span>
+                    <input type ="text" placeholder="Enter the pool size" required>                    
+                  </div>  
+                  <div class="input-box">
+                    <span class="details">Full Name</span>
+                    <input type ="text" placeholder="Enter your full name" required>                    
+                  </div> 
+                  <div class="input-box">
+                    <span class="details">Weight</span>
+                    <input type ="text" placeholder="Enter your weight" required>                    
+                  </div> 
+                  <div class="input-box">
+                    <span class="details">Height</span>
+                    <input type ="text" placeholder="Enter your height" required>                    
+                  </div> 
+                  <div class="input-box">
+                    <span class="details">Birthdate</span>
+                    <input type ="text" placeholder="Enter your birthdate" required>                    
+                  </div>                    
+                  <div class="input-box">
+                    <span class="gender-title">Gender</span>
+                    <select id="gender-title">
+                      <option value ="gender-title">Select gender</option>
+                      <option value ="male">Male</option>
+                      <option value ="female">Female</option>
+                    </select>                   
+                  </div>
+                  <div class="input-box">
+                    <span class="gender-title">Gender group</span>
+                    <select id="gender-title">
+                      <option value ="gender-title">Select gender group</option>
+                      <option value ="escola">ESCOLA DE NATACAO</option>
+                      <option value ="sportstraininggroup">GRUPOS DE FORMACAO DESPORTIVA</option>
+                      <option value ="cadetA">CADETES A</option>
+                      <option value ="cadetA">CADETES B</option>
+                      <option value ="infatilB">INFANTIS B</option>
+                      <option value ="infatilA">INFANTIS A</option>
+                      <option value ="juvenilB">JUVENIS B</option>
+                      <option value ="juvenilA">JUVENIS A</option>
+                      <option value ="junior">JUNIORES</option>
+                      <option value ="senior">SENIORES</option>
+                    </select>                   
+                  </div>
+                  <div class="button">
+                    <p>Select local CSV File:</p>
+                    <input name="myFile" type="file" accept=".txt,.xlsx, .xls, .csv" >  
+                    <button type="submit"  id="convertBtn" onclick="ConvertFile()">Send to MongoDB</button>                    
+                  </div>
+                  
+              </form>
+            </div>
+            
+             
+                  
+             
+          </div>          
+          
+          
+          
+        </div>
+      </body>
+  </html>
