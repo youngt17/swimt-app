@@ -18,6 +18,9 @@
           
     </head>          
       <body>
+        <p>Select local CSV File:</p>
+        <input name="myFile" type="file" accept=".txt,.xlsx, .xls, .csv" >  
+        <button type="submit"  id="convertBtn" onclick="ConvertFile()">Convert and send to MongoDB</button>  
         <div class="fpn">
           <img src="../images/image1.png" style="position:absolute; width:100px;height:122px ">
         </div>
@@ -89,20 +92,10 @@
                       <option value ="junior">JUNIORES</option>
                       <option value ="senior">SENIORES</option>
                     </select>                   
-                  </div>
-                  <p>Select local CSV File:</p>
-                  <input name="myFile" type="file" accept=".txt,.xlsx, .xls, .csv" >  
-                  <button type="submit"  id="convertBtn" onclick="ConvertFile()">Convert and send to MongoDB</button>                  
+                  </div>                                  
               </form>
             </div>
-            
-             
-                  
-             
-          </div>          
-          
-          
-          
+          </div>
         </div>
       </body>
   </html>
