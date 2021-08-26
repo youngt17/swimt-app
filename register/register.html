@@ -43,49 +43,49 @@
           <div class="container">
             <div class="e115_243">For register you must have a token</div>
             <div class="e115_244">Para o registo é necessário um token</div>
-              <div class="title">Registration</div>
-              <form method="post">
-                <div class="user-details">
-                  <div class="input-box">
-                    <span class="details">Email</span>
-                    <input type ="text" placeholder="Enter your email" required>                    
-                  </div>
-                  <div class="input-box">
-                    <span class="details">Password</span>
-                    <input type ="text" placeholder="Enter your password" required>                    
-                  </div>
-                  <div class="input-box">
-                    <span class="details">Token</span>
-                    <input type ="text" placeholder="Enter the registration token" required>                    
-                  </div>  
-                  <div class="input-box">
-                    <span class="details">Full Name</span>
-                    <input type ="text" placeholder="Enter your full name" required>                    
-                  </div> 
-                  <div class="input-box">
-                    <span class="details">Weight</span>
-                    <input type ="text" placeholder="Enter your weight" required>                    
-                  </div> 
-                  <div class="input-box">
-                    <span class="details">Height</span>
-                    <input type ="text" placeholder="Enter your height" required>                    
-                  </div> 
-                  <div class="input-box">
-                    <span class="details">Birthdate</span>
-                    <input type ="text" placeholder="Enter your birthdate" required>                    
-                  </div>                    
-                  <div class="input-box">
-                    <span class="gender-title">Gender</span>
+            <div class="title">Registration</div>
+             <form action="/user/add" method="post">
+                <div class="form-group">
+                  <label for="Fullname">Full name</label>
+                  <input name="fullname" class="form-control" id="inputFullName" aria-describedby="emailHelp" placeholder="Enter full name">
+                  <small id="fullName" class="form-text text-muted">Please enter your full name(First name and Last name)</small>
+                </div>
+                <div class="form-group">
+                  <label for="InputEmail">Email address</label>
+                  <input name="email" class="form-control" id="InputEmail"  placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="InputPassword">Password</label>
+                  <input type="password" name="password1" class="form-control" id="InputPassword" placeholder="Password">
+                </div>
+               <div class="form-group">
+                  <label for="InputToken">Token</label>
+                  <input type="token" name="token" class="form-control" id="token" placeholder="Enter token">
+                </div>
+                <div class="form-group">
+                  <label for="Weight">Weight</label>
+                  <input type="weight" name="weight" class="form-control" id="weight" placeholder="Enter the weight in kg">
+                </div>
+                <div class="form-group">
+                  <label for="Height">Height</label>
+                  <input type="height" name="height" class="form-control" id="weight" placeholder="Enter the height in cm">
+                 </div>
+                <div class="form-group">
+                  <label for="Birthdate">Birthdate</label>
+                  <input type="birthdate" name="birthdate" class="form-control" id="birthdate" placeholder="Enter birthdate">
+                 </div>
+                <div class="form-group">
+                  <span class="gender-title">Gender</span>
                     <select id="gender-title">
                       <option value ="gender-title">Select gender</option>
                       <option value ="male">Male</option>
                       <option value ="female">Female</option>
-                    </select>                   
-                  </div>
-                  <div class="button">
-                    <input type="submit" value="Register">
-                  </div>                  
-              </form>
+                     </select>  
+                </div>
+            </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
             </div>     
           </div>          
         </div>
