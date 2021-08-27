@@ -2,7 +2,7 @@ const form = document.querySelector('#register');
 
 //listen for submit event
 
-form.addEventListener('submit', (event) => {
+form.addEventListener('click', (event) => {
     // disable default action
         event.preventDefault();
   
