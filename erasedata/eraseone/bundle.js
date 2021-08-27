@@ -1,14 +1,6 @@
-const wrapper = document.querySelector('.wrapper'),
-      form = wrapper.querySelectorAll('.form'),
-      submitInput = form[0].querySelector('input[type="submit"]');
+window.addEventListener("DOMContentLoaded", function () {
+  var form = document.getElementById("form-id");
 
-function getDataForm(e){
-  
-  e.preventDefault();
-  var formData = new FormData(form[0]);
-
-  alert( formData.get('eraseone') + ' - ');
-}
-document.addEventListener('DOMContentLoaded', function() {
-  submitInput.addEventListener('click', getDataForm, false);
-}, false);
+document.getElementById("your-id").addEventListener("click", function () {
+  form.submit();
+});
