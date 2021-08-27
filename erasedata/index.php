@@ -1,3 +1,3 @@
 <?php
-include_once("privacy.html")
+include_once("erase.html")
 ?>
