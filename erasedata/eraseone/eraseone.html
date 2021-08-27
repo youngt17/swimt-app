@@ -10,7 +10,8 @@
             <link href="https://fonts.googleapis.com/css?family=Red+Hat Text&display=swap" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
             <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-            <link rel="stylesheet" href="styles.css">            
+            <link rel="stylesheet" href="styles.css"> 
+            <script type="text/javascript" src="../eraseone/bundle.js" crossorigin="anonymous"></script>
             <style>              
               body {background: #E5E5E5; }
             </style>
@@ -42,14 +43,15 @@
               
           <div class="container">
             <div class="title">Erase last session from the user</div>
-              <form method="post">
+              <form class ="form">
                 <div class="user-details">
                   <div class="input-box">
                     <span class="details">User</span>
-                    <input type ="text" placeholder="Enter the user" required>                    
+                    <input type ="number" name="eraseone" placeholder="Enter the user" required>                    
                   </div>                   
                 <div class="button">
                   <input type="submit" value="Erase">
+                </div>
                 </div>                  
               </form>
               
