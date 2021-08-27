@@ -1,3 +1,3 @@
 <?php
-include_once("erase.html")
+include_once("eraseall.html")
 ?>
